@@ -57,32 +57,4 @@
     <priority>0.6</priority>
   </url>
 
-  <url>
-    <loc>https://www.sctechinstitute.org/blog/</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sctechinstitute.org/blog/how-to-become-an-ai-developer-2026.html</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sctechinstitute.org/blog/data-analytics-bootcamp-vs-degree.html</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sctechinstitute.org/blog/is-ai-bootcamp-worth-it-2026.html</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
 </urlset>
