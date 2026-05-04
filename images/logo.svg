@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Shield shape - institutional feel -->
+  <path d="M100 10 L180 50 L180 110 C180 155 145 185 100 195 C55 185 20 155 20 110 L20 50 Z" fill="#0d1b2a"/>
+  <path d="M100 18 L172 54 L172 110 C172 150 140 178 100 188 C60 178 28 150 28 110 L28 54 Z" fill="#0f2744"/>
+
+  <!-- Inner shield border accent -->
+  <path d="M100 28 L164 60 L164 110 C164 146 136 172 100 181 C64 172 36 146 36 110 L36 60 Z" fill="none" stroke="#0097a7" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- SC monogram -->
+  <text x="100" y="108" text-anchor="middle" font-family="Georgia, Times, serif" font-size="56" font-weight="bold" fill="white" letter-spacing="2">SC</text>
+
+  <!-- Divider line -->
+  <line x1="60" y1="122" x2="140" y2="122" stroke="#0097a7" stroke-width="2"/>
+
+  <!-- TECH text -->
+  <text x="100" y="145" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#0097a7" letter-spacing="6">TECH</text>
+
+  <!-- Small decorative elements -->
+  <circle cx="56" cy="122" r="3" fill="#0097a7"/>
+  <circle cx="144" cy="122" r="3" fill="#0097a7"/>
+
+  <!-- Established indicator -->
+  <text x="100" y="165" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#6b7280" letter-spacing="2">INSTITUTE</text>
+</svg>

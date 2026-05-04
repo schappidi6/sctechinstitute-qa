@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Career outcomes for SCTI graduates. AI Developer and Data Analytics careers — salary data, job growth, and roles you can pursue after completing your diploma at SC Technological Institute.">
+    <meta name="keywords" content="AI developer salary, data analytics salary, machine learning engineer jobs, data analyst career Florida, tech career outcomes, AI job market 2024">
+    <meta name="author" content="SC Technological Institute">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://www.sctechinstitute.org/careers.html">
+
+    <meta property="og:title" content="AI &amp; Data Analytics Career Outcomes — Roles, Salaries, Growth | SCTI">
+    <meta property="og:description" content="Where an SCTI diploma takes you. Salary data, job growth projections, and career paths in AI Development and Data Analytics — entry to senior roles.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sctechinstitute.org/careers.html">
+    <meta property="og:site_name" content="SC Technological Institute">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://www.sctechinstitute.org/images/logo.svg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI &amp; Data Analytics Career Outcomes — SCTI">
+    <meta name="twitter:description" content="Where an SCTI diploma takes you. Salary data, job growth projections, and career paths in AI and Data Analytics.">
+    <meta name="twitter:image" content="https://www.sctechinstitute.org/images/logo.svg">
+
+    <title>AI &amp; Data Analytics Career Outcomes — Roles, Salaries, Growth | SCTI</title>
+
+    <!-- Schema: Breadcrumbs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.sctechinstitute.org/" },
+        { "@type": "ListItem", "position": 2, "name": "Careers", "item": "https://www.sctechinstitute.org/careers.html" }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo.svg">
+
+    <style>
+        .careers-hero {
+            background: linear-gradient(135deg, #0d1b2a 0%, #0d2940 100%);
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+        .careers-hero h1 { font-size: 2.75rem; font-weight: 800; color: #fff; margin-bottom: 1rem; }
+        .careers-hero p { font-size: 1.1rem; color: rgba(255,255,255,0.7); max-width: 580px; margin: 0 auto; }
+
+        .careers-section { padding: 5rem 0; }
+        .careers-section-alt { padding: 5rem 0; background: #f8fafc; }
+
+        .salary-banner {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        .salary-card {
+            background: #fff;
+            border: 1px solid #e8ecf0;
+            border-radius: 16px;
+            padding: 1.75rem;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+        }
+        .salary-card-num { font-size: 2rem; font-weight: 800; color: #0097a7; margin-bottom: 0.25rem; }
+        .salary-card-label { font-size: 0.88rem; font-weight: 600; color: #374151; margin-bottom: 0.25rem; }
+        .salary-card-source { font-size: 0.75rem; color: #94a3b8; }
+
+        .role-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 3rem; }
+        .role-card {
+            background: #fff;
+            border: 1px solid #e8ecf0;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .role-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
+        .role-title { font-size: 1.15rem; font-weight: 700; color: #0d1b2a; }
+        .role-program {
+            font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+            padding: 0.25rem 0.6rem; border-radius: 100px;
+        }
+        .role-program-ai { background: rgba(0,151,167,0.1); color: #0097a7; }
+        .role-program-dat { background: rgba(212,168,67,0.12); color: #b8871d; }
+        .role-program-both { background: rgba(26,58,92,0.1); color: #1a3a5c; }
+        .role-salary { font-size: 1.5rem; font-weight: 800; color: #0097a7; margin-bottom: 0.5rem; }
+        .role-salary span { font-size: 0.82rem; font-weight: 500; color: #64748b; }
+        .role-desc { font-size: 0.92rem; color: #64748b; line-height: 1.6; margin-bottom: 1rem; }
+        .role-growth {
+            display: inline-flex; align-items: center; gap: 0.35rem;
+            font-size: 0.8rem; font-weight: 600; color: #16a34a;
+            background: #f0fdf4; border-radius: 6px; padding: 0.3rem 0.6rem;
+        }
+        .role-growth svg { stroke: #16a34a; }
+
+        .industries-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
+        .industry-item {
+            display: flex; align-items: flex-start; gap: 0.75rem;
+            background: #fff; border: 1px solid #e8ecf0; border-radius: 12px; padding: 1.25rem;
+        }
+        .industry-icon { color: #0097a7; flex-shrink: 0; }
+        .industry-name { font-weight: 600; color: #0d1b2a; font-size: 0.95rem; margin-bottom: 0.25rem; }
+        .industry-desc { font-size: 0.82rem; color: #64748b; }
+
+        .bls-note { text-align: center; font-size: 0.8rem; color: #94a3b8; margin-top: 2.5rem; }
+
+        .careers-cta {
+            background: linear-gradient(135deg, #0097a7 0%, #006e7d 100%);
+            padding: 4rem 0; text-align: center;
+        }
+        .careers-cta h2 { color: #fff; font-size: 2rem; font-weight: 700; margin-bottom: 0.75rem; }
+        .careers-cta p { color: rgba(255,255,255,0.8); margin-bottom: 2rem; font-size: 1.05rem; }
+        .careers-cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+        @media (max-width: 900px) {
+            .salary-banner { grid-template-columns: repeat(2, 1fr); }
+            .role-grid { grid-template-columns: 1fr; }
+            .industries-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .salary-banner { grid-template-columns: 1fr; }
+            .industries-grid { grid-template-columns: 1fr; }
+            .careers-hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="SC Technological Institute Home">
+                <img src="images/logo.svg" alt="SCTI Logo" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-text-fallback" style="display:none;"><span class="logo-mark-sm">SCTI</span></div>
+                <div class="nav-logo-text">
+                    <span class="nav-logo-name">SC Technological</span>
+                    <span class="nav-logo-sub">Institute</span>
+                </div>
+            </a>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="none"><a href="programs.html" role="menuitem">Programs</a></li>
+                <li role="none"><a href="admissions.html" role="menuitem">Admissions</a></li>
+                <li role="none"><a href="student-services.html" role="menuitem">Student Services</a></li>
+                <li role="none"><a href="about.html" role="menuitem">About</a></li>
+                <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+            </ul>
+            <a href="admissions.html" class="nav-cta btn btn-accent">Apply Now</a>
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO -->
+        <section class="careers-hero">
+            <div class="container">
+                <div class="hero-badge" style="margin-bottom:1.5rem;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                    Career Outcomes
+                </div>
+                <h1>Where Your SCTI Diploma Takes You</h1>
+                <p>The AI and data analytics fields are growing faster than almost any other sector. Here is what the job market looks like for professionals with these skills.</p>
+            </div>
+        </section>
+
+        <!-- SALARY SNAPSHOT -->
+        <section class="careers-section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Industry Data</span>
+                    <h2 class="section-title">The Market Demand Is Real</h2>
+                    <p class="section-subtitle">By the Numbers — U.S. Bureau of Labor Statistics (2024)</p>
+                </div>
+
+                <div class="salary-banner">
+                    <div class="salary-card fade-in">
+                        <div class="salary-card-num">40%</div>
+                        <div class="salary-card-label">Projected AI Job Growth</div>
+                        <div class="salary-card-source">BLS, 2022–2032 Outlook</div>
+                    </div>
+                    <div class="salary-card fade-in">
+                        <div class="salary-card-num">$113,990</div>
+                        <div class="salary-card-label">Median ML Engineer Salary</div>
+                        <div class="salary-card-source">BLS Occupational Outlook 2024</div>
+                    </div>
+                    <div class="salary-card fade-in">
+                        <div class="salary-card-num">$99,900</div>
+                        <div class="salary-card-label">Median Data Scientist Salary</div>
+                        <div class="salary-card-source">BLS Occupational Outlook 2024</div>
+                    </div>
+                    <div class="salary-card fade-in">
+                        <div class="salary-card-num">25%</div>
+                        <div class="salary-card-label">Data Analytics Job Growth</div>
+                        <div class="salary-card-source">BLS, 2022–2032 Outlook</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROLES -->
+        <section class="careers-section-alt">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Career Paths</span>
+                    <h2 class="section-title">Roles You Can Pursue</h2>
+                    <p class="section-subtitle">These are the roles our programs prepare you to pursue. Actual job titles and salaries vary by employer, location, and experience level.</p>
+                </div>
+
+                <div class="role-grid">
+
+                    <div class="role-card fade-in">
+                        <div class="role-card-header">
+                            <div class="role-title">AI Developer / ML Engineer</div>
+                            <span class="role-program role-program-ai">AI Program</span>
+                        </div>
+                        <div class="role-salary">$113,990 <span>/year median</span></div>
+                        <p class="role-desc">Design and deploy machine learning models, build AI-powered applications, and integrate AI APIs into enterprise systems. High demand across startups, enterprise tech, healthcare, and finance.</p>
+                        <span class="role-growth">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
+                            40% projected growth (BLS)
+                        </span>
+                    </div>
+
+                    <div class="role-card fade-in">
+                        <div class="role-card-header">
+                            <div class="role-title">Data Analyst / Analytics Developer</div>
+                            <span class="role-program role-program-dat">Data Program</span>
+                        </div>
+                        <div class="role-salary">$99,900 <span>/year median</span></div>
+                        <p class="role-desc">Transform raw business data into actionable insights using SQL, visualization tools, and statistical methods. Employed across virtually every industry — from healthcare to logistics to retail.</p>
+                        <span class="role-growth">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
+                            25% projected growth (BLS)
+                        </span>
+                    </div>
+
+                    <div class="role-card fade-in">
+                        <div class="role-card-header">
+                            <div class="role-title">Business Intelligence Analyst</div>
+                            <span class="role-program role-program-dat">Data Program</span>
+                        </div>
+                        <div class="role-salary">$97,300 <span>/year median</span></div>
+                        <p class="role-desc">Build executive dashboards, automate reporting pipelines, and translate data strategy into business action. A consistently top-ranked role by LinkedIn Workforce Reports.</p>
+                        <span class="role-growth">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
+                            Top 10 emerging role (LinkedIn, 2024)
+                        </span>
+                    </div>
+
+                    <div class="role-card fade-in">
+                        <div class="role-card-header">
+                            <div class="role-title">AI Product Specialist / Consultant</div>
+                            <span class="role-program role-program-both">Both Programs</span>
+                        </div>
+                        <div class="role-salary">$90K–$120K <span>/year range</span></div>
+                        <p class="role-desc">Bridge technical AI/analytics capabilities and business needs. Help organizations evaluate, implement, and optimize AI tools — a growing category as enterprises adopt generative AI.</p>
+                        <span class="role-growth">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
+                            Rapid expansion with GenAI adoption
+                        </span>
+                    </div>
+
+                    <div class="role-card fade-in">
+                        <div class="role-card-header">
+                            <div class="role-title">Data Engineer</div>
+                            <span class="role-program role-program-dat">Data Program</span>
+                        </div>
+                        <div class="role-salary">$111,300 <span>/year median</span></div>
+                        <p class="role-desc">Design and maintain data pipelines, warehouses, and infrastructure that power analytics and AI. One of the highest-demand technical roles in the current market.</p>
+                        <span class="role-growth">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
+                            Consistently high demand
+                        </span>
+                    </div>
+
+                    <div class="role-card fade-in">
+                        <div class="role-card-header">
+                            <div class="role-title">AI Ethics &amp; Compliance Analyst</div>
+                            <span class="role-program role-program-ai">AI Program</span>
+                        </div>
+                        <div class="role-salary">$80K–$110K <span>/year range</span></div>
+                        <p class="role-desc">Evaluate AI systems for bias, fairness, and regulatory compliance. An emerging discipline as governments and enterprises formalize AI governance frameworks globally.</p>
+                        <span class="role-growth">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
+                            Emerging with AI regulation
+                        </span>
+                    </div>
+
+                </div>
+
+                <p class="bls-note fade-in">Salary data sourced from the U.S. Bureau of Labor Statistics Occupational Outlook Handbook (2024 edition) and industry reports. Salary ranges vary significantly by location, employer, and years of experience. SCTI does not guarantee job placement or specific salary outcomes.</p>
+            </div>
+        </section>
+
+        <!-- INDUSTRIES -->
+        <section class="careers-section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Where You'll Work</span>
+                    <h2 class="section-title">Industries Hiring AI &amp; Data Professionals</h2>
+                    <p class="section-subtitle">AI and data analytics skills are in demand across virtually every sector of the economy.</p>
+                </div>
+
+                <div class="industries-grid">
+                    <div class="industry-item fade-in">
+                        <div class="industry-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                        </div>
+                        <div>
+                            <div class="industry-name">Financial Services</div>
+                            <div class="industry-desc">Fraud detection, algorithmic trading, risk modeling, customer analytics</div>
+                        </div>
+                    </div>
+                    <div class="industry-item fade-in">
+                        <div class="industry-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <div>
+                            <div class="industry-name">Healthcare &amp; Life Sciences</div>
+                            <div class="industry-desc">Clinical data analysis, predictive diagnostics, patient outcome modeling</div>
+                        </div>
+                    </div>
+                    <div class="industry-item fade-in">
+                        <div class="industry-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <div>
+                            <div class="industry-name">Technology &amp; Software</div>
+                            <div class="industry-desc">AI product development, ML infrastructure, analytics platforms</div>
+                        </div>
+                    </div>
+                    <div class="industry-item fade-in">
+                        <div class="industry-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                        </div>
+                        <div>
+                            <div class="industry-name">Retail &amp; E-Commerce</div>
+                            <div class="industry-desc">Recommendation engines, demand forecasting, customer segmentation</div>
+                        </div>
+                    </div>
+                    <div class="industry-item fade-in">
+                        <div class="industry-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                        </div>
+                        <div>
+                            <div class="industry-name">Logistics &amp; Supply Chain</div>
+                            <div class="industry-desc">Route optimization, inventory intelligence, predictive maintenance</div>
+                        </div>
+                    </div>
+                    <div class="industry-item fade-in">
+                        <div class="industry-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        </div>
+                        <div>
+                            <div class="industry-name">Education &amp; EdTech</div>
+                            <div class="industry-desc">Personalized learning systems, student outcome analytics, AI tutoring</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="careers-cta">
+            <div class="container">
+                <h2>Ready to Pursue a Career in AI or Data Analytics?</h2>
+                <p>Apply for the Fall 2026 Founding Class — limited seats available.</p>
+                <div class="careers-cta-actions">
+                    <a href="programs.html" class="btn btn-outline-light btn-lg">Explore Programs</a>
+                    <a href="admissions.html" class="btn btn-accent btn-lg">Apply for Fall 2026</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo.svg" alt="SCTI Logo" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-text-fallback" style="display:none;"><span class="logo-mark-sm">SCTI</span></div>
+                        <div class="footer-logo-text"><span>SC Technological</span><span>Institute</span></div>
+                    </div>
+                    <p class="footer-about">CIE Licensed #13616. Diploma programs in AI Development and Data Analytics. 100% online, 12 weeks, $6,900.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="careers.html">Career Outcomes</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="programs.html">AI Developer Diploma</a></li>
+                        <li><a href="programs.html">Data Analytics Developer Diploma</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <a href="mailto:info@sctechinstitute.org">info@sctechinstitute.org</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="footer-licensure">Licensed by the Commission for Independent Education, Florida Department of Education, License #13616. SCTI does not guarantee job placement or specific salary outcomes.</p>
+                    <p class="footer-copyright">&copy; 2026 SC Technological Institute. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

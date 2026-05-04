@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SCTI Student Services — academic advising, career services, 24/7 e-library access (200+ databases), online technical support, and more for AI &amp; Data Analytics diploma students.">
+    <meta name="keywords" content="SCTI student services, online learning support, e-library access, academic advising tech school, career services Florida tech school">
+    <meta name="author" content="SC Technological Institute">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.sctechinstitute.org/student-services.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Student Services — Academic, Library &amp; Career Support | SCTI">
+    <meta property="og:description" content="Academic advising, career services, 24/7 e-library access (200+ databases including ACM, IEEE, HBR), online technical support for SCTI diploma students.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sctechinstitute.org/student-services.html">
+    <meta property="og:site_name" content="SC Technological Institute">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://www.sctechinstitute.org/images/logo.svg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Student Services — Academic, Library &amp; Career Support | SCTI">
+    <meta name="twitter:description" content="Academic advising, career services, 24/7 e-library access, online technical support for SCTI diploma students.">
+    <meta name="twitter:image" content="https://www.sctechinstitute.org/images/logo.svg">
+
+    <title>Student Services — Academic, Library &amp; Career Support | SCTI</title>
+
+    <!-- Schema: Breadcrumbs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.sctechinstitute.org/" },
+        { "@type": "ListItem", "position": 2, "name": "Student Services", "item": "https://www.sctechinstitute.org/student-services.html" }
+      ]
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ========== Reset & Base ========== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; line-height: 1.6; background: #fff; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* ========== Coming Soon Overlay ========== */
+        .coming-soon-overlay {
+            display: none;
+            position: fixed; inset: 0; z-index: 9999;
+            background: rgba(10, 10, 30, 0.92);
+            justify-content: center; align-items: center;
+            backdrop-filter: blur(6px);
+        }
+        .coming-soon-overlay.active { display: flex; }
+        .coming-soon-box {
+            background: #fff; border-radius: 16px; padding: 48px 40px;
+            text-align: center; max-width: 480px; width: 90%;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+        }
+        .coming-soon-box h2 { font-size: 1.75rem; margin-bottom: 12px; color: #0d1b4a; }
+        .coming-soon-box p { color: #555; margin-bottom: 24px; }
+        .coming-soon-box .btn { display: inline-block; padding: 12px 28px; background: #0d1b4a; color: #fff; border-radius: 8px; font-weight: 600; cursor: pointer; border: none; font-size: 1rem; transition: background 0.3s; }
+        .coming-soon-box .btn:hover { background: #1a3a7a; }
+
+        /* ========== Header / Navigation ========== */
+        .site-header {
+            background: #0d1b4a; color: #fff;
+            position: sticky; top: 0; z-index: 1000;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+        }
+        .header-inner {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0 24px; max-width: 1200px; margin: 0 auto; height: 72px;
+        }
+        .logo { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.5px; }
+        .logo span { color: #4da6ff; }
+        .nav-toggle { display: none; background: none; border: none; color: #fff; cursor: pointer; padding: 8px; }
+        .main-nav ul { display: flex; gap: 8px; }
+        .main-nav a {
+            padding: 8px 16px; border-radius: 6px; font-size: 0.9rem; font-weight: 500;
+            transition: background 0.3s, color 0.3s;
+        }
+        .main-nav a:hover, .main-nav a.active { background: rgba(255,255,255,0.12); color: #4da6ff; }
+        .nav-apply { background: #2563eb !important; color: #fff !important; border-radius: 6px; font-weight: 600 !important; }
+        .nav-apply:hover { background: #1d4ed8 !important; }
+
+        /* ========== Hero / Page Banner ========== */
+        .page-hero {
+            background: linear-gradient(135deg, #0d1b4a 0%, #1a3a7a 50%, #2563eb 100%);
+            color: #fff; padding: 80px 0 60px; text-align: center;
+            position: relative; overflow: hidden;
+        }
+        .page-hero::before {
+            content: ''; position: absolute; inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .page-hero h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 12px; position: relative; }
+        .breadcrumb { position: relative; font-size: 0.9rem; opacity: 0.8; }
+        .breadcrumb a { color: #93c5fd; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        /* ========== Sections ========== */
+        .content-section { padding: 80px 0; }
+        .content-section:nth-child(even) { background: #f7f9fc; }
+        .section-title {
+            font-size: 2rem; font-weight: 800; color: #0d1b4a;
+            margin-bottom: 16px; text-align: center;
+        }
+        .section-subtitle {
+            font-size: 1.1rem; color: #555; max-width: 700px;
+            margin: 0 auto 48px; text-align: center; line-height: 1.7;
+        }
+
+        /* ========== Service Cards ========== */
+        .services-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 28px;
+        }
+        .service-card {
+            background: #fff; border-radius: 14px; padding: 36px 32px;
+            border: 1px solid #e8ecf2;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.1); }
+        .service-card-icon {
+            width: 56px; height: 56px; margin-bottom: 20px;
+            background: linear-gradient(135deg, #2563eb, #4da6ff);
+            border-radius: 12px; display: flex; align-items: center; justify-content: center;
+        }
+        .service-card-icon svg { width: 26px; height: 26px; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+        .service-card h3 { font-size: 1.2rem; font-weight: 700; color: #0d1b4a; margin-bottom: 12px; }
+        .service-card p { font-size: 0.95rem; color: #555; line-height: 1.7; }
+
+        /* ========== Grading Table ========== */
+        .grading-table {
+            width: 100%; max-width: 600px; margin: 0 auto; border-collapse: collapse;
+            background: #fff; border-radius: 14px; overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border: 1px solid #e8ecf2;
+        }
+        .grading-table thead { background: #0d1b4a; color: #fff; }
+        .grading-table th { padding: 16px 24px; font-size: 0.9rem; font-weight: 600; text-align: left; }
+        .grading-table td { padding: 14px 24px; font-size: 0.95rem; color: #444; border-bottom: 1px solid #f0f0f0; }
+        .grading-table tr:last-child td { border-bottom: none; }
+        .grading-table tr:hover td { background: #f7f9fc; }
+        .grading-note { max-width: 600px; margin: 20px auto 0; text-align: center; font-size: 0.95rem; color: #555; font-weight: 500; }
+
+        /* ========== Online Delivery ========== */
+        .delivery-features {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px; margin-top: 32px;
+        }
+        .delivery-feature {
+            background: #fff; border-radius: 12px; padding: 24px;
+            border: 1px solid #e8ecf2; text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+        }
+        .delivery-feature svg { width: 36px; height: 36px; stroke: #2563eb; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; margin-bottom: 12px; }
+        .delivery-feature h4 { font-size: 1rem; font-weight: 700; color: #0d1b4a; margin-bottom: 8px; }
+        .delivery-feature p { font-size: 0.88rem; color: #666; line-height: 1.6; }
+
+        /* ========== CTA ========== */
+        .cta-section {
+            background: linear-gradient(135deg, #0d1b4a 0%, #2563eb 100%);
+            color: #fff; padding: 64px 0; text-align: center;
+        }
+        .cta-section h2 { font-size: 2rem; font-weight: 800; margin-bottom: 16px; }
+        .cta-section p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 28px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .cta-btn {
+            display: inline-block; padding: 14px 36px; background: #fff; color: #0d1b4a;
+            border-radius: 8px; font-weight: 700; font-size: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+
+        /* ========== Footer ========== */
+        .site-footer { background: #0a0f1e; color: #ccc; padding: 64px 0 0; }
+        .footer-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 40px; margin-bottom: 48px;
+        }
+        .footer-col h3 { color: #fff; font-size: 1.1rem; margin-bottom: 20px; font-weight: 700; }
+        .footer-col p { font-size: 0.9rem; line-height: 1.8; color: #999; }
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col ul a { font-size: 0.9rem; color: #999; transition: color 0.3s; }
+        .footer-col ul a:hover { color: #4da6ff; }
+        .footer-contact-item { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 0.9rem; color: #999; }
+        .footer-contact-item svg { flex-shrink: 0; width: 18px; height: 18px; stroke: #4da6ff; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding: 24px 0; text-align: center; font-size: 0.85rem; color: #666;
+        }
+        .footer-bottom span { display: block; margin-top: 4px; font-size: 0.8rem; color: #555; }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 768px) {
+            .nav-toggle { display: block; }
+            .main-nav { position: absolute; top: 72px; left: 0; right: 0; background: #0d1b4a; padding: 16px 24px; display: none; border-top: 1px solid rgba(255,255,255,0.1); }
+            .main-nav.open { display: block; }
+            .main-nav ul { flex-direction: column; gap: 4px; }
+            .main-nav a { display: block; padding: 12px 16px; }
+            .page-hero h1 { font-size: 2rem; }
+            .services-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Coming Soon Overlay (removed - site is live with CIE License #13616) -->
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">SC <span>Tech</span> Institute</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('open')">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="student-services.html" class="active">Student Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admissions.html" class="nav-apply">Apply Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Student Services</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / Student Services
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Supporting Your Success</h2>
+            <p class="section-subtitle">SC Technological Institute is committed to providing comprehensive support services to help every student achieve their educational and career goals.</p>
+
+            <div class="services-grid">
+
+                <!-- Academic Advising -->
+                <div class="service-card">
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <h3>Academic Advising</h3>
+                    <p>Upon enrollment, SCTI provides academic advising by assigning an academic advisor who assists the student in attaining educational goals. The advisor works directly with each student to provide academic advisement, guidance, and prompt feedback.</p>
+                </div>
+
+                <!-- Academic Counseling -->
+                <div class="service-card">
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Academic Counseling</h3>
+                    <p>Academic counseling is available to all students during admission and throughout the program. Problems the institution cannot address will be referred to community organizations that can provide appropriate assistance.</p>
+                </div>
+
+                <!-- Career Services -->
+                <div class="service-card">
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </div>
+                    <h3>Career Services</h3>
+                    <p>The school offers career services including job search skills training, resume writing, and interview preparation. The school maintains a network of professionals and employers who provide mentoring to support student career development.</p>
+                </div>
+
+                <!-- E-Library -->
+                <div class="service-card">
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                    </div>
+                    <h3>E-Library</h3>
+                    <p>Students and faculty have access to SC Technological Institute Online Library via Aquinas Network, providing round-the-clock access to instructional, academic, and research resources. All Zoom sessions are recorded and available in the LMS for review.</p>
+                </div>
+
+                <!-- Online Technical Assistance -->
+                <div class="service-card">
+                    <div class="service-card-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    </div>
+                    <h3>Online Technical Assistance</h3>
+                    <p>24/7 technical assistance is available via email at <a href="mailto:info@sctechinstitute.org" style="color:#2563eb;font-weight:500;">info@sctechinstitute.org</a>. Our support team is dedicated to ensuring students have uninterrupted access to all learning platforms and resources.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Delivery -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Online Program Delivery</h2>
+            <p class="section-subtitle">All instruction is delivered online through 16-week terms via Moodle LMS with synchronous instruction, discussions, assignments, readings, and projects.</p>
+
+            <div class="delivery-features">
+                <div class="delivery-feature">
+                    <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    <h4>Moodle LMS</h4>
+                    <p>Each student receives a username and password for their personal Moodle page with course materials, assignments, and grades.</p>
+                </div>
+                <div class="delivery-feature">
+                    <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                    <h4>Live Zoom Classes</h4>
+                    <p>Synchronous live classes conducted daily via Zoom for real-time interaction with instructors and peers.</p>
+                </div>
+                <div class="delivery-feature">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <h4>Class Schedule</h4>
+                    <p>Monday through Friday, 9:00 AM to 9:00 PM EST. All sessions are recorded and available in the LMS.</p>
+                </div>
+                <div class="delivery-feature">
+                    <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    <h4>Requirements</h4>
+                    <p>Students need a personal computer with internet access to participate in all online coursework and live sessions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grading System -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Grading System</h2>
+            <p class="section-subtitle">SC Technological Institute uses the following grading system to evaluate student performance.</p>
+
+            <table class="grading-table">
+                <thead>
+                    <tr>
+                        <th>Grade</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>P</strong></td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td><strong>F</strong></td>
+                        <td>Fail</td>
+                    </tr>
+                    <tr>
+                        <td><strong>I</strong></td>
+                        <td>Incomplete</td>
+                    </tr>
+                    <tr>
+                        <td><strong>W</strong></td>
+                        <td>Withdrawal</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="grading-note">Students must maintain a 70% pass rate in all courses to remain in good academic standing.</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Need Assistance?</h2>
+            <p>Our student services team is here to support you every step of the way. Reach out today.</p>
+            <a href="contact.html" class="cta-btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About SCTI</h3>
+                    <p>SC Technological Institute is dedicated to empowering students with technical skills, hands-on experience, and a professional mindset needed to thrive in today's technology landscape.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="student-services.html">Student Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="programs.html">AI Developer Diploma</a></li>
+                        <li><a href="programs.html">Data Analytics Developer Diploma</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        1016 Collier Center Way, Suite 204, Naples, FL 34110
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        (571) 274-1591
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        info@sctechinstitute.org
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        Mon-Fri, 9:00 AM - 5:00 PM EST
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 SC Technological Institute. All rights reserved.
+                <span>Licensed by the Commission for Independent Education, Florida Department of Education, License #13616.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
