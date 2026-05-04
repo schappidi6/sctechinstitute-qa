@@ -57,4 +57,32 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://www.sctechinstitute.org/blog/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sctechinstitute.org/blog/starting-a-career-in-ai-in-2026.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sctechinstitute.org/blog/bootcamp-vs-bachelors-degree-data-roles-2026.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sctechinstitute.org/blog/how-to-evaluate-a-tech-education-program.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
 </urlset>
